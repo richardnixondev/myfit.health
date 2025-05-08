@@ -9,9 +9,8 @@ body {
   border: 2px solid pink;
   padding: 10px;
   background-color: rgb(237, 168, 191);
-  
 }
-.logo{
+.logo {
   align-self: center;
 }
 
@@ -30,7 +29,6 @@ body {
 
 .dropdown {
   position: relative;
-
 }
 
 .dropdown__menu {
@@ -51,24 +49,26 @@ body {
 .dropdown__menu li a {
   color: white;
 }
-.introtex{
+.introtex {
   text-align: center;
 }
-.heading{
+.heading {
   text-align: center;
 }
-.age-groups{
+.age-groups {
   display: flex;
   justify-content: space-evenly;
   text-align: center;
-  
 }
-.ageGroup1,.ageGroup2,.ageGroup3,.ageGroup4{
+.ageGroup1,
+.ageGroup2,
+.ageGroup3,
+.ageGroup4 {
   border: 2px solid rgb(211, 68, 92);
   border-radius: 10px;
-  padding: 40%;
+  padding: 40px;
   flex-wrap: wrap;
-  
+  background-color: rgb(238, 182, 201);
 }
 
 /* #root {
