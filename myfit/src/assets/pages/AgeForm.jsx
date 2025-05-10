@@ -1,10 +1,10 @@
-import { useState } from 'react';
+import { useState } from "react";
 
 export function AgeForm({ ageGroup }) {
   const [formData, setFormData] = useState({
-    weight: '',
-    height: '',
-    activityLevel: '',
+    weight: "",
+    height: "",
+    activityLevel: "",
   });
 
   const handleChange = (e) => {
@@ -13,14 +13,24 @@ export function AgeForm({ ageGroup }) {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    console.log('Submitted data for age group', ageGroup, formData);
+    console.log("Submitted data for age group", ageGroup, formData);
     // Here you could save the data to state, localStorage, or send to a server
   };
 
   return (
-    <div className="form-wrapper">
-      <h2>Enter your info for age group: {ageGroup}</h2>
+    <div className="form">
       <form onSubmit={handleSubmit}>
+        <label>
+          Name:
+          <input
+            type="text"
+            name="Name"
+            value={formData.name}
+            onChange={handleChange}
+          />
+        </label>
+        <br />
+
         <label>
           Weight (kg):
           <input
@@ -42,6 +52,20 @@ export function AgeForm({ ageGroup }) {
           />
         </label>
         <br />
+        <label>
+          Gender:
+          <select
+            name="Gender"
+            value={formData.activityLevel}
+            onChange={handleChange}
+          >
+            <option value="">Select</option>
+            <option value="low">Female</option>
+            <option value="moderate">Male</option>
+            <option value="high">Other</option>
+          </select>
+        </label>
+        <br />
 
         <label>
           Activity Level:
@@ -54,6 +78,18 @@ export function AgeForm({ ageGroup }) {
             <option value="low">Low</option>
             <option value="moderate">Moderate</option>
             <option value="high">High</option>
+          </select>
+        </label>
+        <br />
+
+        <label>
+          BMI Category:
+          <select name="BMI category" onChange={handleChange}>
+            <option value="">Category</option>
+            <option value="Underweight">Underweight</option>
+            <option value="Normal weight">Normal weight</option>
+            <option value="Overweight">Overweight</option>
+            <option value="Obese">Obese</option>
           </select>
         </label>
         <br />
