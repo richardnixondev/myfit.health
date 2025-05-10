@@ -17,7 +17,7 @@ body {
 .navbar__list {
   list-style: none;
   display: flex;
-  gap: 1rem;
+  /* gap: 1rem; */
 }
 
 .navbar__list li a,
@@ -25,40 +25,70 @@ body {
   color: white;
   text-decoration: none;
   cursor: pointer;
+  font-size: 3rem;
+  margin: 10px;
 }
 
 .dropdown {
   position: relative;
+ 
 }
 
 .dropdown__menu {
   position: absolute;
   top: 100%;
-  background: rgb(88, 24, 34);
+  background: rgb(211, 68, 92);
   list-style: none;
-  padding: 0.5rem;
-  margin: 0;
+  padding: 10px;
+  margin: 20px;
   border-radius: 4px;
   width: 300px;
 }
 
 .dropdown__menu li {
-  margin: 0.5rem 0;
+  margin: 50px;
 }
 
 .dropdown__menu li a {
   color: white;
+  text-decoration: none;
+  font-weight: bold;
 }
 .introtex {
   text-align: center;
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeSlideIn 1s ease-out forwards;
+}
+
+@keyframes fadeSlideIn {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 .heading {
   text-align: center;
+
+}
+button{
+  border: none;
+  background-color:rgb(238, 182, 201) ;
+   color:rgb(5, 5, 5);
+  font-size: 2rem;
+  transition: 0.3s ease;
+  text-decoration: none;
+  border-radius: 10px;
+
+}
+button:hover{
+  text-shadow: 0 0 5px rgb(202, 19, 95), 0 0 10px rgb(237, 229, 233), 0 0 20px #0ff;
 }
 .age-groups {
   display: flex;
   justify-content: space-evenly;
   text-align: center;
+
 }
 .ageGroup1,
 .ageGroup2,
@@ -69,6 +99,16 @@ body {
   padding: 40px;
   flex-wrap: wrap;
   background-color: rgb(238, 182, 201);
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeSlideIn 1s ease-out forwards;
+
+  @keyframes fadeSlideIn {
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
 }
 
 /* #root {

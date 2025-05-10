@@ -1,4 +1,4 @@
-import { Link } from 'react-router';
+import { Link } from "react-router";
 export function Home() {
   return (
     <>
@@ -11,27 +11,28 @@ export function Home() {
       <h1 className="heading">Select your Age</h1>
       <div className="age-groups">
         <div className="ageGroup1">
-          <p>
-            <Link to="/1">18-29</Link>
-          </p>
+          <button>
+            {" "}
+            <Link to="/1">Age 18-29</Link>
+          </button>
         </div>
 
         <div className="ageGroup2">
-          <p>
+          <button>
             <Link to="/2">Age 30-39</Link>
-          </p>
+          </button>
         </div>
 
         <div className="ageGroup3">
-          <p>
+          <button>
             <Link to="/3">Age 40-49</Link>
-          </p>
+          </button>
         </div>
 
         <div className="ageGroup4">
-          <p>
+          <button>
             <Link to="/4">Age 50+</Link>
-          </p>
+          </button>
         </div>
       </div>
     </>
