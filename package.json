@@ -5,7 +5,7 @@
   "type": "module",
   "scripts": {
     "build": "vite build",
-    "start": "cross-env vite preview --port $PORT"
+    "start": "cross-env vite preview --host --port $PORT"
   },
   "dependencies": {
     "@eslint/js": "^9.22.0",
