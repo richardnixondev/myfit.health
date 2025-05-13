@@ -18,7 +18,7 @@ function BMIGeneralView() {
   const [isCreating, setIsCreating] = useState(false);
 
   const api = axios.create({
-    baseURL: process.env.API_URL,
+    baseURL: 'https://myfit-health-backend.onrender.com',
     timeout: 10000,
   });
 
