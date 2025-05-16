@@ -39,6 +39,7 @@ The MVP includes the following core features:
 
 - Custom Domain 
 - Responsive UI for mobile and desktop
+
 ---
 
 ## 🔧 Technologies Used
@@ -88,16 +89,6 @@ The MVP includes the following core features:
 
 - Deploying in early stages will help you mitigate misconfigurations and bugs earlier.
 
-
-
-Security:
-
-Implemented JWT refresh cycles and data encryption.
-
-UI/UX:
-
-Optimized real-time updates with WebSockets.
-
 ---
 
 ## 👨‍💻 Developers
@@ -110,13 +101,17 @@ Optimized real-time updates with WebSockets.
 ---
 
 ## 📈 Future Improvements
+
+🔐 Implement JWT refresh cycles and data encryption.
+
+🧩 integration with third-party APIs.(Nutritionix)
+
 ⌚ Wearable sync (Apple Watch/Google Fit)
 
 🤖 AI-driven goal recommendations
 
 🏆 Social features (leaderboards, challenges)
 
-📱 React Native mobile app
 
 
 ## 🚀 Live Demo
