@@ -5,7 +5,7 @@
 ![Made with](https://img.shields.io/badge/Made%20with-MERN-blue)
 
 **myfit.health** is a health and fitness tracking application designed to help users monitor their physical activities, health metrics, and personal goals. This document outlines the core functionality, architecture, technologies used, and development journey of the project.
-
+---
 
 ![image](public/Animation.gif)
 
@@ -20,6 +20,7 @@
 - [Challenges & Lessons Learned](#-challenges--lessons-learned)
 - [Developers](#-developers)
 - [Future Improvements](#-future-improvements)
+- [Live Demo](#-live-demo)
 
 ---
 
@@ -112,7 +113,7 @@ The MVP includes the following core features:
 
 🏆 Social features (leaderboards, challenges)
 
-
+---
 
 ## 🚀 Live Demo
 
