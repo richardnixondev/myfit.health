@@ -84,7 +84,14 @@ button{
 button:hover{
   text-shadow: 0 0 5px rgb(202, 19, 95), 0 0 10px rgb(237, 229, 233), 0 0 20px #0ff;
 }
-.age-groups {
+.form{
+  border: 2px solid rgb(212, 86, 107);
+  text-align: center;
+  padding: 50px;
+
+}
+
+/* .age-groups {
   display: flex;
   justify-content: space-evenly;
   text-align: center;
@@ -109,7 +116,7 @@ button:hover{
       transform: translateY(0);
     }
   }
-}
+} */
 
 /* #root {
   max-width: 1280px;
