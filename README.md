@@ -1,6 +1,15 @@
 # 🏋️ myfit.health
 
+![License](https://img.shields.io/badge/license-MIT-green)
+![Status](https://img.shields.io/badge/status-in%20progress-yellow)
+![Made with](https://img.shields.io/badge/Made%20with-MERN-blue)
+
 **myfit.health** is a health and fitness tracking application designed to help users monitor their physical activities, health metrics, and personal goals. This document outlines the core functionality, architecture, technologies used, and development journey of the project.
+
+
+![image](public/Animation.gif)
+
+
 
 ---
 ## 📚 Table of Contents
@@ -11,7 +20,6 @@
 - [Challenges & Lessons Learned](#-challenges--lessons-learned)
 - [Developers](#-developers)
 - [Future Improvements](#-future-improvements)
-- [License](#-license)
 
 ---
 
@@ -19,70 +27,68 @@
 
 The MVP includes the following core features:
 
-- User registration and authentication
-- Profile creation with health-related data
-- Dashboard displaying fitness goals and progress
-- Integration with health-tracking APIs or manual input
-- Basic analytics for activities (e.g., calories burned, steps, heart rate)
-- Responsive UI for mobile and desktop
+- ✅ Create a Single Page Application (SPA), using React, consisting of multiple views.
+- ✅ The React application should be integrated with either a mock backend or an external API and should perform all CRUD (Create, Read, Update, Delete) operations on that API.
+- ✅ Your project should be deployed online, allowing anyone to access and use your app.
+- ✅ Have your project available on a GitHub repository. If your project includes a mock back-end API you should have two GitHub repositories - one for your front-end React application and the other for your back-end API.
+- ✖️ Have at least 2 commits per day on your project repository that you worked on.
+- ✅ As a final step, check all the features outlined in points 1 - 3 and ensure they are implemented and working ahead of delivery
+---
 
+  ## 📌 Extras
+
+- Custom Domain 
+- Responsive UI for mobile and desktop
 ---
 
 ## 🔧 Technologies Used
 
-- **Frontend**: React.js / Next.js  
+- **Frontend**: React.js / Vite  
 - **Backend**: Node.js, Express.js  
-- **Database**: MongoDB  
+- **Database**: Json File  
 - **Authentication**: JWT / OAuth 2.0  
-- **API Integration**: [e.g., Fitbit API, Apple HealthKit, etc.]  
-- **Styling**: Tailwind CSS / Styled Components  
-- **Deployment**: Vercel / Heroku / Docker  
+- **Styling**: CSS
+- **Deployment**: Render 
 - **Version Control**: Git + GitHub  
 
 ---
 
 ## 🧱 Data Structure
 
-### Example: User Schema (MongoDB)
+### User Schema (Json File)
 
 ```json
 {
-  "username": "john_doe",
-  "email": "john@example.com",
-  "password": "hashed_password",
-  "age": 28,
-  "weight": 72,
-  "height": 175,
-  "goals": {
-    "daily_steps": 10000,
-    "calories_burn": 500
-  },
-  "activities": [
-    {
-      "type": "Running",
-      "duration": 30,
-      "calories": 300,
-      "date": "2025-05-16"
-    }
-  ]
+"id": 1746882543193,
+"name": "Olivia Smith",
+"age": 39,
+"weight": 64,
+"height": 165,
+"gender": "female",
+"activityLevel": "moderate",
+"activityDescription": "Moderate exercise 3-5 days/week",
+"bmiValue": "23.51",
+"bmiCategory": "Normal weight",
+"createdAt": "2025-05-10T13:09:03.193Z"
 }
 ```
 
 ---
 ## 📐 Architecture Diagram
 
-
+![image](public/myfit.png)
 
 ---
 
 ## 🚧 Challenges & Lessons Learned
-Scalable Data Modeling:
 
-Designed flexible schemas for evolving fitness metrics.
+- Time management is something that needs to be taken seriously.
 
-API Integration:
+- Be avoid of over engineering.
 
-Handled rate limits and webhook authentication (e.g., Fitbit).
+- Deploying in early stages will help you mitigate misconfigurations and bugs earlier.
+
+
 
 Security:
 
@@ -112,8 +118,6 @@ Optimized real-time updates with WebSockets.
 
 📱 React Native mobile app
 
-## 📃 License
-MIT © myfit.health
 
 ## 🚀 Live Demo
 
