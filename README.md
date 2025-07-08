@@ -41,6 +41,7 @@ The MVP includes the following core features:
 
 - Custom Domain 
 - Responsive UI for mobile and desktop
+- Cors Validation
 
 ---
 
